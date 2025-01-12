@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    min-height: 100vh;
+    background-color: rgba(196, 255, 228, 0.847);
+    align-items: center;
+    padding: 30px;
+    font-family: "Roboto", serif;
+}
+
+.user_form {
+    display: flex;
+    column-gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #00000031;
+    height: max-content;
+}
+
+.user_task {
+    font-size: 1rem;
+    padding: 3px 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 35px;
+    font-family: "Roboto", serif;
+}
+
+.user_form button {
+    font-size: 1rem;
+    padding: 3px 5px;
+    color: #000;
+    background-color: rgb(2, 239, 2);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: "Roboto", serif;
+}
+.user_form button:hover {
+    background-color: rgb(28, 220, 28);
+}
+
+.user_form button:active {
+    border-color: #000;
+}
+
+.toDo_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    list-style-type: decimal;
+}
+
+.toDo_list li {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.finish_task {
+    text-decoration: line-through;
+}
